@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Consumo Combustível</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var tanque = 45;
+	var autonomiaG = 627;
+	var autonomiaA = 497;
+
+	var litroG = 5.92;
+	var litroA = 4.87;
+
+	var kmlG = (autonomiaG / tanque);
+	var kmlA = (autonomiaA / tanque);
+
+	var vlrTotG = (litroG * tanque);
+	var vlrTotA = (litroA * tanque);
+
+	var custokmG = (kmlG / litroG);
+	var custokmA = (kmlA / litroA);
+	document.write("A media en km/l abastecido com gasolina é:" + kmlG.toFixed(2) + "<br>");
+	document.write("A media em km/l abastecido com alcool é:" + kmlA.toFixed(2) + "<br>");
+	document.write("O valor total gasto para completar o tanque com gasolina é:" + custokmG.toFixed(2) + "<br>");
+	document.write("O valor total gasto para completar o tanque com alcool é:" + custokmA.toFixed(2) + "<br>");
+
+function economia() {
+
+
+	if (custokmG > custokmA){
+		document.write("álcool é mais economico!");
+	}
+	else {
+		document.write("álcool é mais economico!");
+	}
+	}
+
+	economia();
+</script>
+</body>
+</html>
